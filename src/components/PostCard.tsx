@@ -26,7 +26,7 @@ import toast from "react-hot-toast";
 type Posts = Awaited<ReturnType<typeof getPosts>>;
 type Post = Posts[number];
 
-const PostCard =  ({
+const PostCard = ({
   post,
   dbUserID,
 }: {
