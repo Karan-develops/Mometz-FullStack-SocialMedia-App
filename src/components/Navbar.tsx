@@ -4,6 +4,7 @@ import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 import { currentUser } from "@clerk/nextjs/server";
 import { syncUser } from "@/actions/user.actions";
+import { MoonStar } from "lucide-react";
 
 const Navbar = async () => {
   const user = await currentUser();
@@ -17,9 +18,9 @@ const Navbar = async () => {
           <div className="flex items-center">
             <Link
               href="/"
-              className="text-xl font-bold text-primary font-mono tracking-wider"
+              className="flex gap-2 text-xl font-bold text-primary font-mono tracking-wider"
             >
-              Momentz
+              <MoonStar /> Momentz
             </Link>
           </div>
           <DesktopNavbar />

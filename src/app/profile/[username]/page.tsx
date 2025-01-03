@@ -4,10 +4,10 @@ import {
   getUserPosts,
   isFollowing,
 } from "@/actions/profile.actions";
-import ProfilePageClient from "../ProfilePageClient";
 import { notFound } from "next/navigation";
+import ProfilePageClient from "./ProfilePageClient";
 
-export async function generateMetaData({
+export async function generateMetadata({
   params,
 }: {
   params: { username: string };
